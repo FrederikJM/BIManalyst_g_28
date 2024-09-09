@@ -1,8 +1,0 @@
-import ifcopenshell
-from bonsai.bim.ifc import IfcStore
-file = IfcStore.get_file()
-slabs = file.by_type('IfcSlab')
-print("Number of slabs =",len(slabs))
-
-element_id = '0EI0MSHbX9gg8Fxwar7lL8'
-element = ifc_file.by_guid(element_id)
