@@ -1,0 +1,10 @@
+import ifcopenshell #Import IFCOpenShell
+from bonsai.bim.ifc import IfcStore
+model = IfcStore.get_file() #Saves file which is active in blender
+
+storeys_in_model=len(model.by_type('IfcBuildingStorey'))
+
+if storeys_in_model == 1:
+    print(f"\nThere is {storeys_in_model} storey in the model.")
+else:
+    print(f"\nThere are {storeys_in_model} storeys in the model.")
