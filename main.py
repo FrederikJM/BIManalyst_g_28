@@ -4,7 +4,11 @@ from .rules import windowRule
 from .rules import doorRule
 #from .rules import Number_of_Storeys
 
-model = ifcopenshell.open("C:\\Users\\User\\Desktop\\BIM 2024\\Assignment 1\\CES_BLD_24_06_STR.ifc")
+#model = ifcopenshell.open("C:\\Users\\User\\Desktop\\BIM 2024\\Assignment 1\\CES_BLD_24_06_STR.ifc")
+
+model = ifcopenshell.open("/Users/frederik/Library/CloudStorage/OneDrive-DanmarksTekniskeUniversitet/Dokumenter/Kandidat bygningsdesign/4. semester/Advanced BIM")
+
+
 
 windowResult = windowRule.checkRule(model)
 doorResult = doorRule.checkRule(model)
