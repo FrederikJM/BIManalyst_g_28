@@ -1,5 +1,7 @@
 # BIManalyst group 28
 
 
-#This is a test comment
-#This is test2
+#Structural
+#Number of Storeys
+#CES_BLD_24_06_STR, pg.177
+#The script checks the number of the storeys
