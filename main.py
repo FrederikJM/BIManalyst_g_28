@@ -5,16 +5,10 @@ from .rules import doorRule
 
 model = ifcopenshell.open("path/to/ifcfile.ifc")
 
-storeys_in_model=len(model.by_type('IfcBuildingStorey'))
+windowResult = windowRule.checkRule(model)
+doorResult = doorRule.checkRule(model)
+Number_of_storeysResult = Number_of_storeys.checkRule(model)
 
-if storeys_in_model == 1:
-    print(f"\nThere is {storeys_in_model} storey in the model.")
-else:
-    print(f"\nThere are {storeys_in_model} storeys in the model.")
-
-
-#windowResult = windowRule.checkRule(model)
-#doorResult = doorRule.checkRule(model)
-
-#print("Window result:", windowResult)
-#print("Door result:", doorResult)
+print("Window result:", windowResult)
+print("Door result:", doorResult)
+print("Storeys results:", Number_of_storeysResult)
