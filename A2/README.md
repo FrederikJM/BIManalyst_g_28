@@ -1,11 +1,11 @@
 ## A2a: About our group
-Confidence in using Python: 2 
-Focus area: Structural 
-Group 28: Analyst 
+Confidence in using Python: 2 <br>
+Focus area: Structural <br>
+Group 28: Analyst <br>
 ## A2b: Identification of Claim
-Claim Building: #2406 
-Issue: Wind loading 
-Description: We will calculate the wind loads and check if they align with the calculations in the report. 
+Claim Building: #2406 <br> 
+Issue: Wind loading <br>
+Description: We will calculate the wind loads and check if they align with the calculations in the report. <br>
 Why we chose this claim: Wind loads are an important part of the design in high buildings especially in Denmark. Since the seismic load is much smaller, the wind load is dominant in horizontal loading. An optimized wind load can minimize the climate impact of the building, as weaker or less material can be used. 
 ## A2c: Use Case
 #### How would this claim be checked?
