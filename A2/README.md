@@ -1,4 +1,4 @@
-##**A2a: About our group**
+##*A2a: About our group*
 Confidence in using Python: 2 
 Focus area: Structural 
 Group 28: Analyst 
