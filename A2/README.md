@@ -14,23 +14,23 @@ We will import the model. We will extract information about the main geometry of
 After the preliminary dimensioning of the elements, in the beginning of structural analysis (load definition). 
 #### What information does this claim rely on? 
 The wind loads are defined based on the geometry of the structure and the location of the structure. For this we need to extract data from the existing model. 
-####**What phase? planning, design, build or operation** 
+#### What phase? planning, design, build or operation 
 The load calculation is part of the design phase. 
-####**What BIM purpose is required? Gather, generate, analyse, communicate or realise?**
+#### What BIM purpose is required? Gather, generate, analyse, communicate or realise? 
 This tool will be used to generate loads. Gathering information about the locations and geometry is also required. 
-####**Use Case Examples** 
+#### Use Case Examples 
 Although not an exact match, our case might fit to the Use Case Example #8, the engineering analysis, and more specifically, the structural analysis. 
-##**A2d: Scope the use case** 
+## A2d: Scope the use case
 A new tool is needed to easily access and determine the wind load on the structure. 
-##**A2e: Tool Idea** 
+## A2e: Tool Idea  
 The idea for the tool is to easily determine the wind load on a structure based on the outer geometry of the building. An accurate and detailed determination of the wind load is important to secure a safe design. However, in some cases the wind load is simplified on the safe side to ensure easy calculations. With a new tool that easily identifies the wind load acting upon the building an optimal design can be achieved. 
-##**A2f: Information Requirements** 
-####**Needed information: **
+## A2f: Information Requirements 
+#### Needed information: 
 The outer dimensions of the buildings are needed in order to determine the correct form factors for wind calculation.
 The location of the building is important as the surrounding area has an impact on the wind acting on the building.
 As the surroundings are not modelled in the IFC an assumption of this will be made. Number of floors and location of floors such that a line load on the individual floors can be determined. 
-##**A2g: Identify appropriate software licence**
-Chosen software license: GPL-3.0 ![Picture1](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A2/BPMN.svg)
+## A2g: Identify appropriate software licence 
+Chosen software license: GPL-3.0<br> ![Picture1](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A2/BPMN.svg)<br>
 ![Picture 2](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A2/BPMN_tool.svg)
 
  
