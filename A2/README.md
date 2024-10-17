@@ -17,7 +17,7 @@ The wind loads are defined based on the geometry of the structure and the locati
 #### What phase? planning, design, build or operation 
 The load calculation is part of the design phase. 
 #### What BIM purpose is required? Gather, generate, analyse, communicate or realise? 
-This tool will be used to generate loads. Gathering information about the locations and geometry is also required. 
+Gathering information about the locations and geometry is required. This tool will be analyzing the said information to generate loads.
 #### Use Case Examples 
 Although not an exact match, our case might fit to the Use Case Example #8, the engineering analysis, and more specifically, the structural analysis. 
 ## A2d: Scope the use case
