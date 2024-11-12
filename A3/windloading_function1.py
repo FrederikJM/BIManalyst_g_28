@@ -78,18 +78,18 @@ def wind_loading(file):
                             min_y, max_y = min(min_y, y), max(max_y, y)
                             min_z, max_z = min(min_z, z), max(max_z, z)
 
-                for product in ifc_file.by_type("IfcBeam"):
-                    # Check if the product has a geometry representation
-                    if product.Representation:
-                        shape = ifcopenshell.geom.create_shape(settings, product)
+                # for product in ifc_file.by_type("IfcBeam"):
+                #     # Check if the product has a geometry representation
+                #     if product.Representation:
+                #         shape = ifcopenshell.geom.create_shape(settings, product)
                         
-                        # Access the vertices
-                        vertices = shape.geometry.verts
-                        for i in range(0, len(vertices), 3):
-                            x, y, z = vertices[i], vertices[i+1], vertices[i+2]
-                            min_x, max_x = min(min_x, x), max(max_x, x)
-                            min_y, max_y = min(min_y, y), max(max_y, y)
-                            min_z, max_z = min(min_z, z), max(max_z, z)
+                #         # Access the vertices
+                #         vertices = shape.geometry.verts
+                #         for i in range(0, len(vertices), 3):
+                #             x, y, z = vertices[i], vertices[i+1], vertices[i+2]
+                #             min_x, max_x = min(min_x, x), max(max_x, x)
+                #             min_y, max_y = min(min_y, y), max(max_y, y)
+                #             min_z, max_z = min(min_z, z), max(max_z, z)
 
 
                 # Calculate global dimensions
