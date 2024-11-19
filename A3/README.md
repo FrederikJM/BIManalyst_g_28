@@ -59,11 +59,6 @@ Assumptions regarding the model (IFC-file):
     If basement levels are named differently please chance this in order to use
     the function.
 
-
-
-
-
-## Instructions to run the tool
 The function's name is wind_loading().
 
 INPUT: The function takes an IFC-file as the input.
@@ -72,6 +67,13 @@ OUTPUT: The function outputs the extracted outer dimensions of the building,
         reports the determined wind pressure in the different zones for
         two wind directions and makes two plots illustrating the wind action
         on the building.
+
+
+## Instructions to run the tool
+
+
+
+
 
 # Advanced Building Design
 
@@ -88,6 +90,8 @@ successfully.
 
 
 
+
+# OLD_____________________________________
 
 ## A2b: Identification of Claim
 Claim Building: #2410 <br> 

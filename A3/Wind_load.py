@@ -385,6 +385,7 @@ def wind_loading(file):
         wind_load_long = formfactor_long.drop(formfactor_long.columns[[0,6]], axis=1).reset_index(drop=True)*q_p(height)
 
 
+
     print("")
     print("The wind load for the wind direction acting along the width of the building [kN/m²]:")
     print(round(wind_load_short,2))
@@ -395,6 +396,7 @@ def wind_loading(file):
     wind_load_long = formfactor_long.drop(formfactor_long.columns[[0,6]], axis=1).reset_index(drop=True)*q_p(height)
     print("The wind load for the wind direction acting along the length of the building [kN/m²]:")
     print(round(wind_load_long,2))
+    
 
 
     ################################
