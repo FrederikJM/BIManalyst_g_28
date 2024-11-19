@@ -256,6 +256,9 @@ def wind_loading(file):
 
     def q_p(z):
         return (1+7*I_v(z))*0.5*rho_air*V_m(z)**2/1000 #[kN/m2]
+    
+    print("")
+    print("The peak velocity pressure is determined as",round(q_p(z),2),"kN/m²")    
 
     ########################################
 
@@ -384,14 +387,14 @@ def wind_loading(file):
 
     print("")
     print("The wind load for the wind direction acting along the width of the building [kN/m²]:")
-    print(wind_load_short)
+    print(round(wind_load_short,2))
 
 
     print(" ")
 
     wind_load_long = formfactor_long.drop(formfactor_long.columns[[0,6]], axis=1).reset_index(drop=True)*q_p(height)
     print("The wind load for the wind direction acting along the length of the building [kN/m²]:")
-    print(wind_load_long)
+    print(round(wind_load_long,2))
 
 
     ################################

@@ -1,15 +1,77 @@
 # About the tool
 ## The problem that the tool solves
 
+In the early design stage of a building the structural engineers task is to 
+identify all the loads acting on a building. Especially wind load can be tedious 
+to determine and simplifications often lead to loads which are to conservative
+which in the end has an impact on the amount of material used to keep the 
+building stable. 
+
+Therefore, this tool should be a efficient way to determine wind load on a
+building.
 
 
-
-## The problem is found at
+## The problem is found at...
+The problem is found at CES_BLD_24_06_STR p. 8 (pdf=12) and in the apppendix
+p. 41 (pdf) where wind load is faulty determined! The group has used the values
+of the shape coefficents which is equivalent to 1m². For stability calculations
+the values regarding an area of 10m² should be used.  
 
 ## Descrition of the tool
+The tool determines wind load on a rectangular building based on an IFC-file.
+
+Firstly, the tool filters out basement levels and looks at the structure which is
+located above ground. From the remaing floors a bounding box around the building
+is created. The dimensions of this box is then extracted as the width, length 
+and height.
+
+By these three dimensions the tool determines the peak velocity pressure, and
+the wind loads in zone A, B, C, D and E.
+
+Lastly these results are plotted as a wind load plan showcasing the different
+loads at the different zones.
+
+
+Assumptions for wind calculation:
+    The calculations are based on DS/EN 1991-1-4 incl. Danish National Annex.
+    The terrain is flat.
+    The orientation of the building is not taken into account, wind action is
+    not reduced for any wind directions.
+    The building is located more than 25km from the west coast of Denmark.
+    The terrain category is III.
+    Building height should be at least 5m.
+    Surrounding structures are not taken into account.
+    Reduction by construction factor is not taken into account.
+    Reduction in terms of building height (different wind pressures 
+    at different heights) is not incorporated.
+
+
+Assumptions regarding the model (IFC-file):
+    The investigated model should contain a column and walls at every edge 
+    of the building, and at the top and bottom of the building.
+    If this is not the case uncommenting some code in the function
+    will take slabs and beams into account, however, this might increase the 
+    calculation time significantly!
+    The function filters out any elements related to a building storey which
+    contains "-" followed by a number this, is done as these stories are 
+    assumed to be basement levels located underground and they are not
+    relevant in the determination of the pressure coefficients for the wind load.
+    If basement levels are named differently please chance this in order to use
+    the function.
+
+
+
+
 
 ## Instructions to run the tool
+The function's name is wind_loading().
 
+INPUT: The function takes an IFC-file as the input.
+
+OUTPUT: The function outputs the extracted outer dimensions of the building, 
+        reports the determined wind pressure in the different zones for
+        two wind directions and makes two plots illustrating the wind action
+        on the building.
 
 # Advanced Building Design
 
