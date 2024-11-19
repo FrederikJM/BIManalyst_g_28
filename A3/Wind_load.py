@@ -1,31 +1,49 @@
 """
-This function calculates wind load on a rectangular building based on a IFC-file
+Authors:
+This function is created by:
+    Frederik Jønsson Madsen - S183666
+    Maria Deliveri          - S240063
+At the Technical University of Denmark in the period of the Fall 2024 semester.
+
+________________________________________________________________________________
+    
+The function determines wind load on a rectangular building based on an IFC-file.
+
+The function's name is wind_loading().
+
+INPUT: The function takes an IFC-file as the input.
+
+OUTPUT: The function outputs the extracted outer dimensions of the building, 
+        reports the determined wind pressure in the different zones for
+        two wind directions and makes two plots illustrating the wind action
+        on the building.
 
 Assumptions for wind calculation:
-    The terrain is flat
-    The orientation of the building is not taken into account, max wind on all sides
-    The building is placed more than 25km from the A Coast
-    The terrain category is III
-    Building height should be at lA 5m
-    Surrounding structures are not taken into account
-    Reduction by construction factor is not taken into account
-    Reduction in terms of building height (different wind preassure 
-    at different heights) is not incorporated
+    The calculations are based on DS/EN 1991-1-4 incl. Danish National Annex.
+    The terrain is flat.
+    The orientation of the building is not taken into account, wind action is
+    not reduced for any wind directions.
+    The building is located more than 25km from the west coast of Denmark.
+    The terrain category is III.
+    Building height should be at least 5m.
+    Surrounding structures are not taken into account.
+    Reduction by construction factor is not taken into account.
+    Reduction in terms of building height (different wind pressures 
+    at different heights) is not incorporated.
 
 
-Assumption regarding the model:
+Assumptions regarding the model (IFC-file):
     The investigated model should contain a column and walls at every edge 
     of the building, and at the top and bottom of the building.
+    If this is not the case uncommenting the code at lines 128-152
+    will take slabs and beams into account, however, this might increase the 
+    calculation time significantly!
+    The function filters out any elements related to a building storey which
+    contains "-" followed by a number this, is done as these stories are 
+    assumed to be basement levels located underground and they are not
+    relevant in the determination of the pressure coefficients for the wind load.
+    
 
-
-Please see an example of using the function at the end of this file.
-
-INPUT: The function takes a path to a file as an input
-
-OUTPUT: The function output the extracted outer dimensions of the building, 
-        reports the determined wind pressure in the different zones for
-        two wind directions and makes two plots illustrating the wind actiong
-        on the building.
 """
 import ifcopenshell
 import numpy as np
@@ -34,8 +52,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import re
-
-#Is this chance commited????????????
 
 
 def wind_loading(file):
@@ -424,30 +440,30 @@ def wind_loading(file):
 
     # Plot the zones around the building
     # Zone D
-    ax.add_patch(patches.Rectangle((0, length), width, zone_wind_loads["D"]*load_scale, color=color_map["D"], alpha=0.6, label="Zone D"))
+    ax.add_patch(patches.Rectangle((0, length), width, zone_wind_loads["D"]*load_scale, color=color_map["D"],linewidth=2, alpha=0.6, label="Zone D"))
 
     # Zone E
-    ax.add_patch(patches.Rectangle((0,0), width, zone_wind_loads["E"]*load_scale, color=color_map["E"], alpha=0.6, label="Zone E"))
+    ax.add_patch(patches.Rectangle((0,0), width, zone_wind_loads["E"]*load_scale, color=color_map["E"],linewidth=2, alpha=0.6, label="Zone E"))
 
     # A Zone left
-    ax.add_patch(patches.Rectangle((0, length-L_A_long), zone_wind_loads["A"]*load_scale, L_A_long, color=color_map["A"], alpha=0.6, label="Zone A"))
+    ax.add_patch(patches.Rectangle((0, length-L_A_long), zone_wind_loads["A"]*load_scale, L_A_long, color=color_map["A"],linewidth=2, alpha=0.6, label="Zone A"))
 
     # A Zone right
-    ax.add_patch(patches.Rectangle((width, length-L_A_long), -zone_wind_loads["A"]*load_scale, L_A_long, color=color_map["A"], alpha=0.6, label="Zone A"))
+    ax.add_patch(patches.Rectangle((width, length-L_A_long), -zone_wind_loads["A"]*load_scale, L_A_long, color=color_map["A"],linewidth=2, alpha=0.6, label="Zone A"))
 
     # B Zone left
-    ax.add_patch(patches.Rectangle((0, length-L_A_long-L_B_long), zone_wind_loads["B"]*load_scale, L_B_long, color=color_map["B"], alpha=0.6, label="Zone B"))
+    ax.add_patch(patches.Rectangle((0, length-L_A_long-L_B_long), zone_wind_loads["B"]*load_scale, L_B_long, color=color_map["B"],linewidth=2, alpha=0.6, label="Zone B"))
 
     # B Zone right
-    ax.add_patch(patches.Rectangle((width, length-L_A_long-L_B_long), -zone_wind_loads["B"]*load_scale, L_B_long, color=color_map["B"], alpha=0.6, label="Zone B"))
+    ax.add_patch(patches.Rectangle((width, length-L_A_long-L_B_long), -zone_wind_loads["B"]*load_scale, L_B_long, color=color_map["B"],linewidth=2, alpha=0.6, label="Zone B"))
 
 
     if No_C_long == False:
         # C Zone left
-        ax.add_patch(patches.Rectangle((0, 0), zone_wind_loads["C"]*load_scale, L_C_long, color=color_map["C"], alpha=0.6, label="Zone C"))
+        ax.add_patch(patches.Rectangle((0, 0), zone_wind_loads["C"]*load_scale, L_C_long, color=color_map["C"],linewidth=2, alpha=0.6, label="Zone C"))
         
         # C Zone left
-        ax.add_patch(patches.Rectangle((width, 0), -zone_wind_loads["C"]*load_scale, L_C_long, color=color_map["C"], alpha=0.6, label="Zone C"))
+        ax.add_patch(patches.Rectangle((width, 0), -zone_wind_loads["C"]*load_scale, L_C_long, color=color_map["C"],linewidth=2, alpha=0.6, label="Zone C"))
 
 
     # Add labels and annotations
@@ -532,30 +548,30 @@ def wind_loading(file):
 
     # Plot the zones around the building
     # Zone D
-    ax.add_patch(patches.Rectangle((-zone_wind_loads["D"]*load_scale, 0), zone_wind_loads["D"]*load_scale, length, color=color_map["D"], alpha=0.6, label="Zone D"))
+    ax.add_patch(patches.Rectangle((-zone_wind_loads["D"]*load_scale, 0), zone_wind_loads["D"]*load_scale, length, color=color_map["D"],linewidth=2, alpha=0.6, label="Zone D"))
 
     # Zone E
-    ax.add_patch(patches.Rectangle((width - zone_wind_loads["E"]*load_scale,0), zone_wind_loads["E"]*load_scale, length, color=color_map["E"], alpha=0.6, label="Zone E"))
+    ax.add_patch(patches.Rectangle((width - zone_wind_loads["E"]*load_scale,0), zone_wind_loads["E"]*load_scale, length, color=color_map["E"],linewidth=2, alpha=0.6, label="Zone E"))
 
     # A Zone left
-    ax.add_patch(patches.Rectangle((0, zone_wind_loads["A"]*load_scale),L_A_short, -zone_wind_loads["A"]*load_scale, color=color_map["A"], alpha=0.6, label="Zone A"))
+    ax.add_patch(patches.Rectangle((0, zone_wind_loads["A"]*load_scale),L_A_short, -zone_wind_loads["A"]*load_scale, color=color_map["A"],linewidth=2, alpha=0.6, label="Zone A"))
 
     # A Zone right
-    ax.add_patch(patches.Rectangle((0, length), L_A_short, -zone_wind_loads["A"]*load_scale, color=color_map["A"], alpha=0.6, label="Zone A"))
+    ax.add_patch(patches.Rectangle((0, length), L_A_short, -zone_wind_loads["A"]*load_scale, color=color_map["A"],linewidth=2, alpha=0.6, label="Zone A"))
 
     # B Zone left
-    ax.add_patch(patches.Rectangle((L_A_short,0), L_B_short, zone_wind_loads["B"]*load_scale, color=color_map["B"], alpha=0.6, label="Zone B"))
+    ax.add_patch(patches.Rectangle((L_A_short,0), L_B_short, zone_wind_loads["B"]*load_scale, color=color_map["B"],linewidth=2, alpha=0.6, label="Zone B"))
 
     # B Zone right
-    ax.add_patch(patches.Rectangle((L_A_short,length), L_B_short, -zone_wind_loads["B"]*load_scale, color=color_map["B"], alpha=0.6, label="Zone B"))
+    ax.add_patch(patches.Rectangle((L_A_short,length), L_B_short, -zone_wind_loads["B"]*load_scale, color=color_map["B"],linewidth=2, alpha=0.6, label="Zone B"))
 
 
     if No_C_short == False:
         # C Zone left
-        ax.add_patch(patches.Rectangle((width-L_C_short, 0), L_C_short, zone_wind_loads["C"]*load_scale, color=color_map["C"], alpha=0.6, label="Zone C"))
+        ax.add_patch(patches.Rectangle((width-L_C_short, 0), L_C_short, zone_wind_loads["C"]*load_scale, color=color_map["C"], linewidth=2, alpha=0.6, label="Zone C"))
         
         # C Zone left
-        ax.add_patch(patches.Rectangle((width-L_C_short, length), L_C_short, -zone_wind_loads["C"]*load_scale, color=color_map["C"], alpha=0.6, label="Zone C"))
+        ax.add_patch(patches.Rectangle((width-L_C_short, length), L_C_short, -zone_wind_loads["C"]*load_scale, color=color_map["C"], linewidth=2, alpha=0.6, label="Zone C"))
 
 
     # Add labels and annotations
@@ -601,6 +617,3 @@ def wind_loading(file):
     ax.grid(True)
 
     plt.show()
-
-                
-            
