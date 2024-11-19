@@ -11,6 +11,18 @@
 ## Instructions to run the tool
 
 
+# Advanced Building Design
+
+## What Advanced Building Design Stage (A, B, C or D) would your tool be useful?
+
+## What subjects might use it?
+
+## What information is required in the model for your tool to work?
+
+
+# IDS
+Below is stated what criterions should be fulfilled in order to use the tool
+successfully.
 
 
 
