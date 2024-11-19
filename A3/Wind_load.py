@@ -41,9 +41,8 @@ import re
 def wind_loading(file):
     
     ### IMPORT ###
-    # Load the IFC file
-    ifc_file = ifcopenshell.open(file)
-
+    ifc_file = file
+    
     ### REMOVE BASEMENT LEVELS ###
     def contains_hyphen_number(s):
         return bool(re.search(r'-\d+', s))
@@ -522,14 +521,6 @@ def wind_loading(file):
             "E": round(wind_load_short.iloc[0,4],2),
         }
 
-    # # Color mapping for wind load intensity (you can adjust the color scale)
-    # color_map = {
-    #     "D": "red",
-    #     "E": "blue",
-    #     "A": "blue",
-    #     "B": "blue",
-    #     "C": "blue",
-    # }
 
     # Create the plot
     fig, ax = plt.subplots(figsize=(8,8))
@@ -611,8 +602,5 @@ def wind_loading(file):
 
     plt.show()
 
-#Example
-#wind_loading(r'C:\Users\User\Desktop\BIM 2024\Assignment 3\CES_BLD_24_10_ARC.ifc')
-wind_loading(r'C:\Users\FJM\OneDrive\Skrivebord\CES_BLD_24_06_STR.ifc')
                 
             
