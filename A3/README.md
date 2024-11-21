@@ -33,17 +33,15 @@ loads at the different zones.
 
 
 Assumptions for wind calculation: <br>
-    The calculations are based on DS/EN 1991-1-4 incl. Danish National Annex.
-    The terrain is flat.
-    The orientation of the building is not taken into account, wind action is
-    not reduced for any wind directions.
-    The building is located more than 25km from the west coast of Denmark.
-    The terrain category is III.
-    Building height should be at least 5m.
-    Surrounding structures are not taken into account.
-    Reduction by construction factor is not taken into account.
-    Reduction in terms of building height (different wind pressures 
-    at different heights) is not incorporated.
+- The calculations are based on DS/EN 1991-1-4 incl. Danish National Annex.
+- The terrain is flat.
+- The orientation of the building is not taken into account, wind action is not reduced for any wind directions.
+- The building is located more than 25km from the west coast of Denmark.
+- The terrain category is III.
+- Building height should be at least 5m.
+- Surrounding structures are not taken into account.
+- Reduction by construction factor is not taken into account.
+- Reduction in terms of building height (different wind pressures at different heights) is not incorporated.
 
 
 Assumptions regarding the model (IFC-file): <br>
