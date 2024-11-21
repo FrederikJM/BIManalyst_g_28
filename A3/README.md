@@ -78,23 +78,28 @@ To run the tool please follow the steps below:
 
 
 # Advanced Building Design
-
 ## What Advanced Building Design Stage (A, B, C or D) would your tool be useful?
+This tool is to be used in the early design phases where a quick determination
+of the wind load on the building is needed, this would be in Design Stages 
+A, B, and C.
 
 ## What subjects might use it?
+This tool is meant to be used by the structural subject.
 
 ## What information is required in the model for your tool to work?
-
-
-# IDS
 Below are stated what criteria should be fulfilled to use the tool
 successfully.
-- The IFC-file should contain only the investigated building
-- This building should have the geometry of a box with vertical outer walls and
+- The IFC-file should contain only the geometry of the investigated building.
+- The building should not have any cantilever parts.
+- The building should have the geometry of a box with vertical outer walls and
   a flat roof.
+- The building envelope should not be tapered.
 - The IFC-file should have a wall or a column at every edge of the building's plan.
 - Basement stories that are located underground should have a name that contains
   "-n", where n i is an integer.
+
+# IDS
+
  
 
 
