@@ -67,6 +67,10 @@ OUTPUT: The function outputs the extracted outer dimensions of the building,
         two wind directions and makes two plots illustrating the wind action
         on the building. 
 
+### Overview of the function
+![Picture1](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A2/BPMN.svg)<br>
+
+
 
 ## Instructions to run the tool
 To run the tool please follow the steps below:
