@@ -102,6 +102,9 @@ successfully.
 - The IFC-file should have a wall or a column at every edge of the building's plan.
 - Basement stories that are located underground should have a name that contains
   "-n", where n is an integer.
+- The stories that are located above ground should not have a name that contains
+  "-n", where n is an integer.
+
 
 # IDS
 
