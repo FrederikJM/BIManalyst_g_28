@@ -32,7 +32,7 @@ Lastly these results are plotted as a wind load plan showcasing the different
 loads at the different zones.
 
 
-Assumptions for wind calculation: <br>
+Assumptions for wind calculation:
 - The calculations are based on DS/EN 1991-1-4 incl. Danish National Annex.
 - The terrain is flat.
 - The orientation of the building is not taken into account, wind action is not reduced for any wind directions.
