@@ -78,8 +78,8 @@ To run the tool please follow the steps below:
 - Check that the model you want to investigate satisfies the criteria specified in
   the IDS section of this markdown.
 - Open `main.py` and specify the location of the IFC-model as the model_path at line 33.
-- Run the script "main.py".
-- Evaluate the output in the text output in the console and the plots 
+- Run the script `main.py`.
+- Evaluate the text output in the console and the plots. 
 
 
 # Advanced Building Design
