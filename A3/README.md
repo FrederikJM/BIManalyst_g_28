@@ -44,18 +44,17 @@ Assumptions for wind calculation:
 - Reduction in terms of building height (different wind pressures at different heights) is not incorporated.
 
 
-Assumptions regarding the model (IFC-file): <br>
-    The investigated model should contain a column and walls at every edge 
-    of the building, and at the top and bottom of the building.
-    If this is not the case uncommenting some code in the function
-    will take slabs and beams into account, however, this might increase the 
-    calculation time significantly!
-    The function filters out any elements related to a building storey which
-    contains "-" followed by a number this, is done as these stories are 
-    assumed to be basement levels located underground and they are not
-    relevant in the determination of the pressure coefficients for the wind load.
-    If basement levels are named differently please chance this in order to use
-    the function.
+Assumptions regarding the model (IFC-file):
+- The investigated model should contain a column and walls at every edge of the building, and at the top and bottom of the building.
+  If this is not the case uncommenting some code in the function
+  will take slabs and beams into account, however, this might increase the 
+  calculation time significantly!
+- The function filters out any elements related to a building storey which
+  contains "-" followed by a number this, is done as these stories are 
+  assumed to be basement levels located underground and they are not
+  relevant in the determination of the pressure coefficients for the wind load.
+- If basement levels are named differently please chance this in order to use
+the function.
 
 The function's name is wind_loading().
 
