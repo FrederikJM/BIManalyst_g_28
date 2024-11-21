@@ -35,26 +35,28 @@ loads at the different zones.
 Assumptions for wind calculation:
 - The calculations are based on DS/EN 1991-1-4 incl. Danish National Annex.
 - The terrain is flat.
-- The orientation of the building is not taken into account, wind action is not reduced for any wind directions.
+- The orientation of the building is not taken into account, wind action is
+  not reduced for any wind directions.
 - The building is located more than 25km from the west coast of Denmark.
 - The terrain category is III.
 - Building height should be at least 5m.
 - Surrounding structures are not taken into account.
 - Reduction by construction factor is not taken into account.
-- Reduction in terms of building height (different wind pressures at different heights) is not incorporated.
+- Reduction in terms of building height (different wind pressures at different 
+  heights) is not incorporated.
 
 
 Assumptions regarding the model (IFC-file):
-- The investigated model should contain a column and walls at every edge of the building, and at the top and bottom of the building.
-  If this is not the case uncommenting some code in the function
-  will take slabs and beams into account, however, this might increase the 
-  calculation time significantly!
+- The investigated model should contain a column and walls at every edge of the building, 
+  and at the top and bottom of the building. If this is not the case uncommenting some
+  code in the function will take slabs and beams into account, however, 
+  this might increase the calculation time significantly!
 - The function filters out any elements related to a building storey which
   contains "-" followed by a number this, is done as these stories are 
   assumed to be basement levels located underground and they are not
-  relevant in the determination of the pressure coefficients for the wind load.
+  relevant in the determination of the pressure coefficients and the peak pressure of the wind load.
 - If basement levels are named differently please chance this in order to use
-the function.
+  the function.
 
 The function's name is wind_loading().
 
@@ -67,9 +69,12 @@ OUTPUT: The function outputs the extracted outer dimensions of the building,
 
 
 ## Instructions to run the tool
-
-
-
+To run the tool please follow the step below:
+- Check that the model you want to investigate statisfies the creterions specified in
+  the IDS section of this markdown.
+- Open "main.py" and specify the location of the IFC-model as the model_path at line 33.
+- Run the script "main.py".
+- Evaluate the output in the text output in the console and the plots
 
 
 # Advanced Building Design
