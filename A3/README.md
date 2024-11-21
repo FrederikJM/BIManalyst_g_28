@@ -1,9 +1,9 @@
 # About the tool
 ## The problem that the tool solves
 
-In the early design stage of a building the structural engineers task is to 
+In the early design stage of a building the structural engineer's task is to 
 identify all the loads acting on a building. Especially wind load can be tedious 
-to determine and simplifications often lead to loads which are to conservative
+to determine and simplifications often lead to loads which are too conservative
 which in the end has an impact on the amount of material used to keep the 
 building stable. 
 
@@ -17,7 +17,7 @@ p. 41 (pdf) where wind load is faulty determined! The group has used the values
 of the shape coefficents which is equivalent to 1m². For stability calculations
 the values regarding an area of 10m² should be used.  
 
-## Descrition of the tool
+## Description of the tool
 The tool determines wind load on a rectangular building based on an IFC-file.
 
 Firstly, the tool filters out basement levels and looks at the structure which is
@@ -32,7 +32,7 @@ Lastly these results are plotted as a wind load plan showcasing the different
 loads at the different zones.
 
 
-Assumptions for wind calculation:
+Assumptions for wind calculation: <br>
     The calculations are based on DS/EN 1991-1-4 incl. Danish National Annex.
     The terrain is flat.
     The orientation of the building is not taken into account, wind action is
@@ -46,7 +46,7 @@ Assumptions for wind calculation:
     at different heights) is not incorporated.
 
 
-Assumptions regarding the model (IFC-file):
+Assumptions regarding the model (IFC-file): <br>
     The investigated model should contain a column and walls at every edge 
     of the building, and at the top and bottom of the building.
     If this is not the case uncommenting some code in the function
