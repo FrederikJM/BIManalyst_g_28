@@ -70,7 +70,7 @@ OUTPUT: The function outputs the extracted outer dimensions of the building,
 ### Overview of the function
 
 
-![Picture1](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A2/BPMN.svg)<br>
+![Picture1](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A3/BPMN.svg)<br>
 
 
 ## Instructions to run the tool
@@ -101,7 +101,7 @@ successfully.
 - The building envelope should not be tapered.
 - The IFC-file should have a wall or a column at every edge of the building's plan.
 - Basement stories that are located underground should have a name that contains
-  "-n", where n i is an integer.
+  "-n", where n is an integer.
 
 # IDS
 
