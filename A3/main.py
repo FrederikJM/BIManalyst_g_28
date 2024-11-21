@@ -1,6 +1,6 @@
 """
 Authors:
-This function is created by:
+This script is created by:
     Frederik Jønsson Madsen - S183666
     Maria Deliveri          - S240063
 At the Technical Unerversity of Denmark in the period of the Fall 2024 semester.
