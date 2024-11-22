@@ -14,7 +14,7 @@ The color scheme for the patches is defined to visually represent the zones and 
 ![Picture 2](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Picture2.png)
 ### Step 4
 The plot is initialized using **plt.subplots**, which creates a figure and axes. The dimensions of the figure are also specified in this step.
-A patch is created using patches.Rectangle to represent the building area on the plot. Subsequently, the surrounding zones are plotted based on the same rationale. The presence of Zone C is again checked using an if statement before continuing with the plotting process.<br>
+A patch is created using **add.patch**. A rectangle patch is created to represent the building area on the plot. Subsequently, the surrounding zones are plotted based on the same rationale. The presence of Zone C is again checked using an if statement before continuing with the plotting process.<br>
 
 ![Picture 3](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Picture3.png)
 ### Step 5
