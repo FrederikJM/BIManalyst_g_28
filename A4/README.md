@@ -8,11 +8,6 @@ As engineers, effective communication is often achieved through visual represent
   <img src="https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Figure%20y.png" alt="Image 2" style="width: 40%;">
 </div>
 
-Figure x |  Figure y
-:-------------------------:|:-------------------------:
-![Figure 1](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Figure%20x.png)|
-![Figure 2](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Figure%20y.png)
-
 ### Step 1
 The plot of the applied loads was scaled relative to the size of the building's floor plan to ensure their visibility. A scaling factor of 8 was applied to the loads **(load_scale=8)**.<br>
 ```bash
