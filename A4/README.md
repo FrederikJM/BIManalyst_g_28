@@ -43,7 +43,9 @@ else:
 ```
 
 ### Step 2
-An if statement is used to determine how the plot will be configured based on the zones. It verifies whether a Zone C is present to be plotted and ensures all relevant values are rounded down to two decimal places.<br>
+An if statement is used to determine how the plot will be configured based on the zones. 
+It verifies whether a Zone C is present to be plotted and ensures all relevant values are rounded down to two decimal places.<br>
+*Whether or not zone c will be present should be determined by the engineer in the actual calculations.*
 ### Step 3
 The color scheme for the patches is defined to visually represent the zones and the magnitude of the wind loading.<br>
 
@@ -59,8 +61,8 @@ color_map = {
 ```
 
 ### Step 4
-The plot is initialized using **plt.subplots**, which creates a figure and axes. The dimensions of the figure are also specified in this step.
-A patch is created using **add.patch**. A rectangle patch is created to represent the building area on the plot. Subsequently, the surrounding zones are plotted based on the same rationale. The presence of Zone C is again checked using an if statement before continuing with the plotting process.<br>
+The plot is initialized using `plt.subplots`, which creates a figure and axes. The dimensions of the figure are also specified in this step.
+A patch is created using `add.patch`. A rectangle patch is created to represent the building area on the plot. Subsequently, the surrounding zones are plotted based on the same rationale. The presence of Zone C is again checked using an if statement before continuing with the plotting process.<br>
 
 ```python
 # Create the plot
@@ -160,6 +162,6 @@ plt.show()
 ```
 
 ### Step 7
-Finally, **plt.show()** is called to display the complete figure.<br>
+Finally, `plt.show()` is called to display the complete figure.<br>
 
 
