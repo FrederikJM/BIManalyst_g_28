@@ -44,7 +44,7 @@ An if statement is used to determine how the plot will be configured based on th
 ### Step 3
 The color scheme for the patches is defined to visually represent the zones and the magnitude of the wind loading.<br>
 
-```bash
+```python
 # Color mapping for wind load intensity (you can adjust the color scale)
 color_map = {
     "D": "red",
