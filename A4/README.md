@@ -10,8 +10,8 @@ As engineers, effective communication is often achieved through visual represent
 
 ### Step 1
 The plot of the applied loads was scaled relative to the size of the building's floor plan to ensure their visibility. A scaling factor of 8 was applied to the loads **(load_scale=8)**.<br>
-The wind load in the specific zones has previously been determined in a data table "wind_load_long". <br>
-In the example below the ".iloc[]" function is utilized to extract these values for the data table, but feel free to insert the determined values here.
+The wind load in the specific zones has previously been determined in a data table `wind_load_long`. <br>
+In the example below the `.iloc[]` function is utilized to extract these values for the data table, but feel free to insert your own determined values here.
 
 ```python
 ################################
