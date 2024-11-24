@@ -3,8 +3,8 @@
 ### Why is it important?
 As engineers, effective communication is often achieved through visual representation of designs. To enhance the clarity of wind load calculations, we incorporated a graphical plot alongside numerical values. This approach allows structural engineers to clearly identify the location and distribution of wind loads on the structure. Specifically, we visualized the floor plan, highlighting the different zones of wind loads and their magnitudes in both directions.<br>
 
-![Figure 1](C:\Users\User\Documents\GitHub\BIManalyst_g_28\A4\Figure x.png)
-![Figure 2](C:\Users\User\Documents\GitHub\BIManalyst_g_28\A4\Figure y.png)
+![Figure 1](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Figure%20x.png)
+![Figure 2](https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Figure%20y.png)
 
 ### Step 1
 The plot of the applied loads was scaled relative to the size of the building's floor plan to ensure their visibility. A scaling factor of 8 was applied to the loads **(load_scale=8)**.<br>
