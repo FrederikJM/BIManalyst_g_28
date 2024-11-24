@@ -55,7 +55,7 @@ the tool to even be installed (here I’m thinking of the voxels).
 
 
 
-# (Indicidual) Your future for Advanced use of OpenBIM
+# (Individual) Your future for Advanced use of OpenBIM
 ## Frederik Jønsson Madsen - s183666
 Yes, I will apply OpenBIM in my thesis where I will look into the 
 reconfiguration of concrete elements for new buildings
