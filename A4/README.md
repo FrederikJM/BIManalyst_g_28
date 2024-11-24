@@ -10,7 +10,7 @@ As engineers, effective communication is often achieved through visual represent
 
 ### Step 1
 The plot of the applied loads was scaled relative to the size of the building's floor plan to ensure their visibility. A scaling factor of 8 was applied to the loads **(load_scale=8)**.<br>
-```bash
+```python
 ################################
 ########## PLOT ################
 ################################
@@ -59,7 +59,7 @@ color_map = {
 The plot is initialized using **plt.subplots**, which creates a figure and axes. The dimensions of the figure are also specified in this step.
 A patch is created using **add.patch**. A rectangle patch is created to represent the building area on the plot. Subsequently, the surrounding zones are plotted based on the same rationale. The presence of Zone C is again checked using an if statement before continuing with the plotting process.<br>
 
-```bash
+```python
 # Create the plot
 fig, ax = plt.subplots(figsize=(8,8))
 
@@ -100,7 +100,7 @@ if No_C_long == False:
 ### Step 5
 Labels for each zone are added and positioned appropriately within the figure.<br>
 
-```bash
+```python
 # Add labels and annotations
 if No_C_long == True:
     for zone, load in zone_wind_loads.items():
@@ -143,7 +143,7 @@ else:
 ### Step 6
 The plot is finalized by setting the axes, labels, title, grid, and other visual elements.<br>
 
-```bash
+```python
 # Set up the plot
 ax.set_xlim(-1.5 * -zone_wind_loads["A"]*load_scale, width + 1.5 * -zone_wind_loads["A"]*load_scale)
 ax.set_ylim(1.5 * -zone_wind_loads["E"]*load_scale, length + 1.5 * zone_wind_loads["D"]*load_scale)
