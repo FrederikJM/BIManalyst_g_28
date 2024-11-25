@@ -1,16 +1,17 @@
 # Overview
 
-This GitHub Repository is made by XX and YY in the fall semester of 2024
-at the technincal University of Denmark in the course XXXXXX Advanced BIM.
+This GitHub Repository is made by Frederik Jønsson Madsen - s183666 and Maria 
+Deliveri - s240063 in the fall semester of 2024 at the Technical University
+of Denmark in the course 41934 - Advanced BIM.
 
-The Repository is subdivided into subfolders A1-A5 which represent in class hand-ins.
+The Repository is subdivided into subfolders A1-A5 which represent in-class hand-ins.
 An overview of the content will be given here:
 
-- **A1:**
-- **A2:**
-- **A3:**
-- **A4:**
-- **A5:**
+- **A1:** Forensic BIM - Initial work and introduction to coding with IFC-Openshell
+- **A2:** Use Case - Identification of challenge and creating a plan to solve it.
+- **A3:** Tool - Creation of the tool
+- **A4:** Tutorial - A tutorial on how to plot a wind load plan
+- **A5:** Reflection - Reflection on the course
 
 # About the tool
 ## The problem that the tool solves
