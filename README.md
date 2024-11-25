@@ -1,3 +1,17 @@
+# Overview
+
+This GitHub Repository is made by XX and YY in the fall semester of 2024
+at the technincal University of Denmark in the course XXXXXX Advanced BIM.
+
+The Repository is subdivided into subfolders A1-A5 which represent in class hand-ins.
+An overview of the content will be given here:
+
+- **A1:**
+- **A2:**
+- **A3:**
+- **A4:**
+- **A5:**
+
 # About the tool
 ## The problem that the tool solves
 
@@ -11,11 +25,7 @@ Therefore, this tool should be an efficient way to determine wind load on a
 building.
 
 
-## The problem is found at...
-The problem is found at CES_BLD_24_06_STR p. 8 (pdf=12) and in the appendix
-p. 41 (pdf) where wind load is faulty determined! The group has used the values
-of the shape coefficents which is equivalent to 1m². For stability calculations,
-the values regarding an area of 10m² should be used.  
+**INSERT PICTURE OF RESULT PLOTS HERE**
 
 ## Description of the tool
 The tool determines wind load on a rectangular building based on an IFC-file.
@@ -80,35 +90,5 @@ To run the tool please follow the steps below:
 - Open `main.py` and specify the location of the IFC-model as the model_path at line 33.
 - Run the script `main.py`.
 - Evaluate the text output in the console and the plots. 
-
-
-# Advanced Building Design
-## What Advanced Building Design Stage (A, B, C or D) would your tool be useful?
-This tool is to be used in the early design phases where a quick determination
-of the wind load on the building is needed, this would be in Design Stages 
-A, B, and C.
-
-## What subjects might use it?
-This tool is meant to be used by the structural subject.
-
-## What information is required in the model for your tool to work?
-Below are stated what criteria should be fulfilled to use the tool
-successfully.
-- The IFC-file should contain only the geometry of the investigated building.
-- The building should not have any cantilever parts.
-- The building should have the geometry of a box with vertical outer walls and
-  a flat roof.
-- The building envelope should not be tapered.
-- The IFC-file should have a wall or a column at every edge of the building's plan.
-- Basement stories that are located underground should have a name that contains
-  "-n", where n is an integer.
-- The stories that are located above ground should not have a name that contains
-  "-n", where n is an integer.
-
-
-# IDS
-
- 
-
 
 
