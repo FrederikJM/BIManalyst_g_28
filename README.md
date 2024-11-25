@@ -25,8 +25,11 @@ building stable.
 Therefore, this tool should be an efficient way to determine wind load on a
 building.
 
+<div style="display: flex; gap: 20px;">
+  <img src="https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Figure%20x.png" alt="Image 1" style="width: 40%;">
+  <img src="https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Figure%20y.png" alt="Image 2" style="width: 40%;">
+</div>
 
-**INSERT PICTURE OF RESULT PLOTS HERE**
 
 ## Description of the tool
 The tool determines wind load on a rectangular building based on an IFC-file.
