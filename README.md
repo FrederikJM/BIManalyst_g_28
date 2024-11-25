@@ -23,7 +23,9 @@ which in the end has an impact on the amount of material used to keep the
 building stable. 
 
 Therefore, this tool should be an efficient way to determine wind load on a
-building.
+building. <br>
+
+One of the outputs from the tool is wind load plans as seen here:
 
 <div style="display: flex; gap: 20px;">
   <img src="https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Figure%20x.png" alt="Image 1" style="width: 40%;">
