@@ -51,6 +51,10 @@ the tool to even be installed (here I’m thinking of the voxels).
 
 
 # (As a group) summary of the feedback you recieved on your tutorial
+It is suggested that we make it clearer what the structural engineer 
+should have calculated beforehand, also the length of the different zones
+could be present in the plots. Lastly, it is pointed out that the 
+visualizations are nice.
 
 
 
