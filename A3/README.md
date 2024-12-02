@@ -106,9 +106,51 @@ successfully.
   "-n", where n is an integer.
 
 
-# IDS
+# Further work
+The following features would be a great addition to the tool:
+- Plotting the length of the zone in the wind load plans plot.
+- Displaying the determined correlation factor ρ in the plots.
+- Extracting the floor height of each floor and determining the 
+point load acting in each floor (this is used for determination 
+of the distribution of load to the stabilizing walls and the amount 
+of reinforcement in the floor diaphragm).
+- Determine the wind load on the roof.
+- Transferring the load directly to FEM software, or identifying 
+the location of the stabilizing walls and determining the distribution 
+of the loads acting on each wall.
+
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
