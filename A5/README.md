@@ -16,8 +16,7 @@ I will challenge the way things normally have been done and create value with
 
 
 ## Maria Deliveri - s240063
-
-
+At the beginning of the semester I was a BIM Modeller. I had some experience creating BIM Models for my own projects in structural engineering and extracting information by opening and viewing models made by architects. I joined the course to dive deeper into BIM to learn how to extract these information in a faster and more efficient way, and make my own custom tools. After 13 weeks, I can confidently say that I have evolved to an Open BIM Analyst although I am still not entirely confident with programming.
 
 
 
