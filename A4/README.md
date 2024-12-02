@@ -1,6 +1,6 @@
 # Wind load visualization using Matplotlib
 
-# Explicit summary
+# Summary
 **Title:** Wind load visualization using Matplotlib <br>
 **Summary:** This tutorial showcases different possibilities for making plots
  and figures with Matplotlib for Python. The tutorial focuses on making a wind
