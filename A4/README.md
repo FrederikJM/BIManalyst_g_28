@@ -1,8 +1,8 @@
 # Wind load visualization using Matplotlib
 
 # Explicit summary
-`Title:` Wind load visualization using Matplotlib
-`Summary:` This tutorial showcases different possibilities for making plots
+**Title:** Wind load visualization using Matplotlib <br>
+**Summary:** This tutorial showcases different possibilities for making plots
  and figures with Matplotlib for Python. The tutorial focuses on making a wind
  load plan which can be used by the structural engineer.
 
