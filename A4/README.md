@@ -1,6 +1,13 @@
-## Wind load visualization using Matplotlib <br>
+# Wind load visualization using Matplotlib
 
-### Why is it important?
+# Explicit summary
+`Title:` Wind load visualization using Matplotlib
+`Summary:` This tutorial showcases different possibilities for making plots
+ and figures with Matplotlib for Python. The tutorial focuses on making a wind
+ load plan which can be used by the structural engineer.
+
+
+## Why is it important?
 As engineers, effective communication is often achieved through visual representation of designs. To enhance the clarity of wind load calculations, we incorporated a graphical plot alongside numerical values. This approach allows structural engineers to clearly identify the location and distribution of wind loads on the structure. Specifically, we visualized the floor plan, highlighting the different zones of wind loads and their magnitudes in both directions.<br>
 
 <div style="display: flex; gap: 20px;">
@@ -8,7 +15,7 @@ As engineers, effective communication is often achieved through visual represent
   <img src="https://github.com/FrederikJM/BIManalyst_g_28/blob/main/A4/Figure%20y.png" alt="Image 2" style="width: 40%;">
 </div>
 
-### Step 1
+## Step 1
 The plot of the applied loads was scaled relative to the size of the building's floor plan to ensure their visibility. A scaling factor of 8 was applied to the loads **(load_scale=8)**.<br>
 The wind load in the specific zones has previously been determined in a data table `wind_load_long`. <br>
 In the example below the `.iloc[]` function is utilized to extract these values for the data table, but feel free to insert your own determined values here.
@@ -42,11 +49,11 @@ else:
     }
 ```
 
-### Step 2
+## Step 2
 An if statement is used to determine how the plot will be configured based on the zones. 
 It verifies whether a Zone C is present to be plotted and ensures all relevant values are rounded down to two decimal places.<br>
 *Whether or not zone c will be present should be determined by the engineer in the actual calculations.*
-### Step 3
+## Step 3
 The color scheme for the patches is defined to visually represent the zones and the magnitude of the wind loading.<br>
 
 ```python
@@ -60,7 +67,7 @@ color_map = {
 }
 ```
 
-### Step 4
+## Step 4
 The plot is initialized using `plt.subplots`, which creates a figure and axes. The dimensions of the figure are also specified in this step.
 A patch is created using `add.patch`. A rectangle patch is created to represent the building area on the plot. Subsequently, the surrounding zones are plotted based on the same rationale. The presence of Zone C is again checked using an if statement before continuing with the plotting process.<br>
 
@@ -102,7 +109,7 @@ if No_C_long == False:
 
 ```
 
-### Step 5
+## Step 5
 Labels for each zone are added and positioned appropriately within the figure.<br>
 
 ```python
@@ -145,7 +152,7 @@ else:
     
 ```
 
-### Step 6
+## Step 6
 The plot is finalized by setting the axes, labels, title, grid, and other visual elements.<br>
 
 ```python
@@ -161,7 +168,7 @@ ax.grid(True)
 plt.show()
 ```
 
-### Step 7
+## Step 7
 Finally, `plt.show()` is called to display the complete figure.<br>
 
 
