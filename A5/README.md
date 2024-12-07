@@ -50,10 +50,12 @@ the tool to even be installed (here I’m thinking of the voxels).
 
 
 # (As a group) summary of the feedback you recieved on your tutorial
-*Unfortunately, feedback was only provided from one group* <br>
 The key points of the feedback were:
 
 - The visualizations are nice.
+- The structure of the tutorial was very clear.
+- Elaboration on why 8 is chosen as a scaling factor would be nice.
+- Apply help text in the code to help end-user troubleshooting.
 - Please make it clearer what the structural engineer should have
      calculated beforehand.
 - The length of the different zones can be shown in the plots.
