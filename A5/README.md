@@ -16,7 +16,8 @@ I will challenge the way things normally have been done and create value with
 
 
 ## Maria Deliveri - s240063
-At the beginning of the semester I was a BIM Modeller. I had some experience creating BIM Models for my own projects in structural engineering and extracting information by opening and viewing models made by architects. I joined the course to dive deeper into BIM to learn how to extract these information in a faster and more efficient way, and make my own custom tools. After 13 weeks, I can confidently say that I have evolved to an Open BIM Analyst although I am still not entirely confident with programming.
+At the beginning of the semester, I was a BIM Modeler. I had some experience creating BIM Models for my own projects in structural engineering and extracting information by opening and viewing models made by architects. I joined the course to dive deeper into BIM to learn how to extract this information in a faster and more efficient way and make my own custom tools. After 13 weeks, I can confidently say that I have evolved to an Open BIM Analyst who has learnt to apply OpenBIM, although I am still not entirely confident with programming yet.
+Improving my shortcomings in programming will allow me to focus on more crucial matters in OpenBIM, like the IFC schemas and how to work with them more effectively or learn how to coordinate large projects. In fact, I hope I will have a chance to work with it in Advanced Building Design next semester.
 
 
 
@@ -44,12 +45,15 @@ the tool to even be installed (here I’m thinking of the voxels).
 
 ## Maria Deliveri - s240063
 
+I am not entirely sure of the subject of my thesis yet, but in any case this course helped me understand that implementing BIM would help me to better analyze, evaluate and communicate my project. While working with the tool we developed, I recognized how data exchange can be an issue and how OpenBIM can provide solutions to this.
+
+I think that limiting the choice in use cases would make the course more challenging both because it would probably force everyone to work with something they are not entirely familiar with or like and it would take away the motivation that derives from something that interest them. I would be less motivated to work under a use case I am not interested in although it would make the course more structured and would save time choosing our topic.
+
+Although it is very difficult to work with all these tools over the course of 13 weeks, I think I will have the chance to explore them further earlier. 
 
 
 
-
-
-# (As a group) summary of the feedback you recieved on your tutorial
+# (As a group) summary of the feedback you received on your tutorial
 The key points of the feedback were:
 
 - The visualizations are nice.
@@ -79,7 +83,8 @@ can provide. Maybe I should become my own boss?
 
 ## Maria Deliveri - s240063
 
-
+As I mentioned above, I do not know if it will be relevant to my thesis, but I am planning to do so if there is an opportunity to work on it.
+However, I hope I will use it in my professional life. I have worked on a large project before and we did have several issues with interoperability. I think that BIM models have proved their value so far, but they have also proved how inefficient and time-consuming they can be when they are not handled correctly. Working with OpenBIM tools would make the workflow more efficient and the data exchange easier. 
 
 
 
@@ -106,7 +111,11 @@ function of the tool than specific ways to solve a specific problem.
 
 ## Maria Deliveri - s240063
 
-
+I found this course extremely difficult in the beginning but working through the assignments helped me break it down and understand most of the concepts. I have to give credits to my teammate here, who was patiently helping me with programming. The assignments were clearly defined and were structured as steps to understand and achieve the final result.
+ In A1, I got to understand how can we access a model and get information without looking at it visually as a 3d model, then in A2 we had the chance to explore use cases and learned our limits regarding to what we can and what we cannot do and this led us to our tool in A3. 
+In A3 we broke down the function of our tool to simpler ones and in this way we could understand what parts are working, which ones need to be improved in terms of results' quality and time.
+In A4, we could get an insight into what the rest of the teams worked with and learned from their tools. We also got an idea of how we could improve our tool or how we could re-imagine it. However, the presentations in A4 were not always detailed and the fact that we could present any concept we had worked with did not help in making it very clear. I think it would be better if it were mandatory to present the whole tool in this assignment. 
+And finishing A5, I got the chance to review what I have learned in this course and evaluate how I can use this knowledge further in my career.
 
 
 
